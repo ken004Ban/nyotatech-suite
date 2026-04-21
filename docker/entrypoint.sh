@@ -3,6 +3,7 @@ set -e
 
 PORT="${PORT:-10000}"
 sed "s/__RENDER_PORT__/${PORT}/g" /etc/nginx/default.conf.template > /etc/nginx/sites-enabled/default
+nginx -t
 
 cd /var/www/html
 
