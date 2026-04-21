@@ -14,6 +14,8 @@ FROM php:8.2-fpm-bookworm
 RUN apt-get update && apt-get install -y --no-install-recommends \
     nginx \
     supervisor \
+    pkg-config \
+    libonig-dev \
     libpng-dev \
     libjpeg62-turbo-dev \
     libfreetype6-dev \
