@@ -55,6 +55,8 @@ RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoload
 
 RUN rm -f /etc/nginx/sites-enabled/default
 COPY docker/nginx/default.conf.template /etc/nginx/default.conf.template
+COPY docker/php/conf.d/zz-render.ini /usr/local/etc/php/conf.d/zz-render.ini
+COPY docker/php-fpm.d/zz-render.conf /usr/local/etc/php-fpm.d/zz-render.conf
 COPY docker/supervisord.conf /etc/supervisor/conf.d/laravel.conf
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
