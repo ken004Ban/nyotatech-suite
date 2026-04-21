@@ -7,7 +7,7 @@
         <div class="text-uppercase small fw-bold text-primary mb-2">Operations • Finance • Delivery</div>
         <h1 class="display-6 fw-bold mb-3">NyotaTech Business Suite</h1>
         <p class="lead text-secondary mb-4">
-            A Laravel + Blade workspace for proposals, billing, delivery tracking, and structured documentation—aligned with the same MVC + session patterns you already use.
+            A Laravel + Blade workspace for proposals, billing, delivery tracking, and structured documentation aligned with the same MVC + session patterns you already use.
         </p>
         <div class="d-flex flex-wrap gap-2">
             <a class="btn btn-primary btn-lg" href="{{ route('register') }}">Create account</a>
